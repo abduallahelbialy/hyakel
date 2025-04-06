@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Hyakel</title>
+</head>
+
+<body>
+    <!-- ///start navbar//// -->
+    <nav class="bg-transparent w-full">
+        <div class="container mx-auto flex items-center justify-between flex-wrap p-4">
+
+            <!-- Logo -->
+            <div class="w-1/3 flex justify-start">
+                <a href="index.html" class="font-bold text-white">
+                    <img src="assets/image/Mask group.png" alt="logo" class="h-10 w-auto">
+                </a>
+            </div>
+
+            <!-- Center Menu - visible only on lg -->
+            <div class="w-1/3 hidden lg:flex justify-center">
+                <ul class="flex flex-row items-center gap-8">
+                    <li><a href="index.html" class="text-gray-800 font-bold hover:text-blue-600">الرئيسية</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-blue-600">المميزات</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-blue-600">الأسعار</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-blue-600">الخدمات</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-blue-600">المساعدة</a></li>
+                </ul>
+            </div>
+
+            <!-- Buttons (desktop) -->
+            <div class="w-1/3 hidden lg:flex justify-end gap-2 flex-wrap ">
+                <a href="#" class="w-[150px] text-center border border-amber-600 px-[15px] py-[10px] rounded hover:bg-amber-600
+ hover:text-white transition-all duration-300">
+                    تسجيل الدخول
+                </a>
+
+                <a href="#"
+                    class="w-[150px] text-center bg-custom-orange
+ px-[15px] py-[10px] rounded hover:bg-transparent hover:text-white border border-amber-600 transition-all duration-300">
+                    جرب مجانا
+                </a>
+            </div>
+
+            <!-- Toggle Button (mobile) -->
+            <div class="lg:hidden flex justify-end w-2/3">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Toggle Menu Content -->
+            <div id="navbarNav" class="w-full hidden lg:hidden mt-4 ">
+                <ul class="flex flex-col items-center gap-2 ">
+                    <li><a href="index.html" class="text-gray-800 font-bold hover:text-orange-600">الرئيسية</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-orange-600">المميزات</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-orange-600">الأسعار</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-orange-600">الخدمات</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-orange-600">المساعدة</a></li>
+                </ul>
+                <div class="flex flex-col items-center gap-2 mt-4">
+                    <a href="#" class="w-[150px] text-center border border-amber-600 px-[15px] py-[10px] rounded hover:bg-amber-600
+                         hover:text-white transition-all duration-300">
+                        تسجيل الدخول
+                    </a>
+
+                    <a href="#"
+                        class="w-[150px] text-center bg-amber-600
+                         px-[15px] py-[10px] rounded hover:bg-transparent hover:text-white border border-amber-600 transition-all duration-300">
+                        جرب مجانا
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ///end navbar//// -->
+    <!-- /// start header//// -->
+    <header class="padding-section">
+        <div class="container">
+            <div class="row">
+                <div class="flex flex-col items-center justify-center text-center p-4 flex-column ">
+                    <div class="flex flex-wrap items-center justify-center gap-2 text-center">
+                        <h1 class="cheep">
+                            إدارة أعمالك
+                        </h1>
+                        <h1>
+                            بكل سهولة وكفاءة!
+                        </h1>
+                    </div>
+
+                    <p class="font-bold mt-2 leading-relaxed mb-3">
+                        نظام CRM متكامل لإدارة الفواتير، المصروفات، المشاريع،<br />
+                        والمهام بكل سهولة في مكان واحد.
+                    </p>
+
+                    <div class="mt-4">
+                        <a href="#"
+                            class="inline-block bg-amber-600 text-white py-2 px-[70px] rounded-[5px] border-none hover:bg-amber-600  transition">
+                            جرب الآن مجاناً
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <!-- /// start header//// -->
+    <!-- ///start section 1//// - -->
+    <section class="padding-section">
+        <div class="container ">
+            <div class="row">
+                <div class="flex flex-col items-center justify-center text-center p-4 flex-column">
+                    <h1>
+                        كل ما تحتاجه لإدارة أعمالك في منصة واحدة </h1>
+                    <p class=" mt-2 text-[#030303] leading-relaxed mb-3">
+                        تحكّم في كل جانب من جوانب عملك بسهولة من خلال <span class="ch">HYAKEL!</span> نوفر لك الأدوات
+                        الذكية التي تساعدك على
+                        تنظيم أعمالك <br />وزيادة
+                        الإنتاجية، كل ذلك في مكان واحد.
+                    </p>
+                </div>
+                <div class="card flex justify-center gap-3 flex-wrap ">
+                    <div
+                        class="flex flex-col items-center justify-center text-center p-5 flex-column bg-[#FFF9ED] w-[300px]">
+                        <img src="assets/image/lsicon_management-outline.png" alt="logo" class="h-20 w-auto">
+                        <h2 class="mt-2 ">
+                            إدارة الفواتير</h2>
+                        <p class=" mt-2 text-[#030303] leading-relaxed mb-3">
+                            إنشاء وتتبع الفواتير بسهولة
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center text-center p-5 flex-column bg-[#FFF9ED] w-[300px]">
+                        <img src="assets/image/grommet-icons_money.png" alt="logo" class="h-20 w-auto">
+                        <h2 class="mt-2">
+                            إدارة المصروفات
+                        </h2>
+                        <p class=" mt-2 text-[#030303] leading-relaxed mb-3">
+                            تحكم كامل في التدفقات المالية. </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center text-center p-5 flex-column bg-[#FFF9ED] w-[300px]">
+                        <img src="assets/image/iconoir_reports.png" alt="logo" class="h-20 w-auto">
+                        <h2 class="mt-2">
+                            إدارة المشاريع </h2>
+                        <p class=" mt-2 text-[#030303] leading-relaxed mb-3">
+                            تتبع تقدم مشاريعك بكفاءة. </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center text-center p-5 flex-column bg-[#FFF9ED] w-[300px]">
+                        <img src="assets/image/octicon_checklist-16.png" alt="logo" class="h-20 w-auto">
+                        <h2 class="mt-2">
+                            إدارة المهام </h2>
+                        <p class=" mt-2 text-[#030303] leading-relaxed mb-3">
+                            تنظيم فريق العمل بذكاء. </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center text-center p-5 mt-4 flex-column bg-[#FFF9ED] w-[300px]">
+                        <img src="assets/image/flat-color-icons_advertising.png" alt="logo" class="h-20 w-auto">
+                        <h2 class="mt-2">
+                            التسويق الإلكتروني</h2>
+                        <p class=" mt-2 text-[#030303] leading-relaxed mb-3">
+                            أدوات متقدمة للوصول إلى عملائك. </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center text-center p-5 mt-4 flex-column bg-[#FFF9ED] w-[300px]">
+                        <img src="assets/image/lsicon_management-outline.png" alt="logo" class="h-20 w-auto">
+                        <h2 class="mt-2">
+                            التحليلات والتقارير</h2>
+                        <p class=" mt-2 text-[#030303] leading-relaxed mb-3">
+                            رؤية واضحة لأداء عملك. </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center text-center p-5 mt-4 flex-column bg-[#FFF9ED] w-[300px]">
+                        <img src="assets/image/mdi_customer-service.png" alt="logo" class="h-20 w-auto">
+                        <h2 class="mt-2">
+                            إدارة العملاء
+                        </h2>
+                        <p class=" mt-2 text-[#030303] leading-relaxed mb-3">
+                            تحسين علاقاتك مع العملاء. </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center text-center p-5 mt-4 flex-column bg-[#FFF9ED] w-[300px]">
+                        <img src="assets/image/material-symbols_warehouse-outline.png" alt="logo" class="h-20 w-auto">
+                        <h2 class="mt-2">
+                            إدارة المخزون </h2>
+                        <p class=" mt-2 text-[#030303] leading-relaxed mb-3">
+                            متابعة المخزون والمستودعات . </p>
+                    </div>
+
+                </div>
+                <div class="flex justify-center mt-2 ">
+                    <div class="cheep-btn font-bold">
+                        HYAKEL تجعل عملك أكثر تنظيمًا،<br />لتتمكن من التركيز على النجاح!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ///end section 1//// - -->
+    <!-- ///start section 2//// - -->
+    <section class="padding-section">
+        <div class="container ">
+            <div class="row">
+                <div class="flex flex-col items-center justify-center text-center p-4 flex-column">
+                    <div class="position-relative left-[114px] top-[35px]">
+                        <img src="assets/image/cheptitle.png" alt="cheptitle.png" class=" w-[100px]">
+
+                    </div>
+                    <h1 class="d-block">لماذا HYAKEL؟</h1>
+                    <p class=" mt-3 text-[#030303] leading-relaxed mb-3">نساعد الشركات من جميع الأحجام على تحسين إدارة
+                        أعمالها بكفاءة وسهولة.</p>
+                </div>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-6 justify-items-center items-center mx-auto max-w-6xl px-3">
+                    <!-- First Item -->
+                    <div class="flex gap-5 items-center w-full max-w-md">
+                        <div
+                            class="w-[100px] h-[100px] bg-[#FEF2D6] rounded-full flex items-center justify-center shrink-0">
+                            <img src="assets/image/pul.png" alt="logo" class="w-[40px]">
+                        </div>
+                        <div class="flex flex-col">
+                            <h2 class="mt-2 font-bold text-[#974615]">سهولة الاستخدام</h2>
+                            <p class="mt-2 text-[#030303] leading-relaxed mb-3">لا حاجة لتعلم معقد – ابدأ العمل خلال
+                                دقائق!</p>
+                        </div>
+                    </div>
+
+                    <!-- Second Item -->
+                    <div class="flex gap-5 items-center w-full max-w-md md:mt-0 mt-6">
+                        <div
+                            class="w-[100px] h-[100px] bg-[#FEF2D6] rounded-full flex items-center justify-center shrink-0">
+                            <img src="assets/image/mdi_security-lock-outline (1).png" alt="logo" class="w-[40px]">
+                        </div>
+                        <div class="flex flex-col">
+                            <h2 class="mt-2 font-bold text-[#974615]"> حماية كاملة</h2>
+                            <p class="mt-2 text-[#030303] leading-relaxed mb-3">حافظ على بياناتك بأعلى معايير الأمان.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- three Item -->
+
+                    <div class="flex gap-5 items-center w-full max-w-md md:mt-0 mt-6">
+                        <div
+                            class="w-[100px] h-[100px] bg-[#FEF2D6] rounded-full flex items-center justify-center shrink-0">
+                            <img src="assets/image/oui_integration-general.png" alt="logo" class="w-[40px]">
+                        </div>
+                        <div class="flex flex-col">
+                            <h2 class="mt-2 font-bold text-[#974615]">تكامل سلس</h2>
+                            <p class="mt-2 text-[#030303] leading-relaxed mb-3">لاربط أدواتك المختلفة في منصة واحدة.</p>
+                        </div>
+                    </div>
+                    <!-- four Item -->
+
+                    <div class="flex gap-5 items-center w-full max-w-md md:mt-0 mt-6">
+                        <div
+                            class="w-[100px] h-[100px] bg-[#FEF2D6] rounded-full flex items-center justify-center shrink-0">
+                            <img src="assets/image/material-symbols_support.png" alt="logo" class="w-[40px]">
+                        </div>
+                        <div class="flex flex-col">
+                            <h2 class="mt-2 font-bold text-[#974615]">دعم دائم</h2>
+                            <p class="mt-2 text-[#030303] leading-relaxed mb-3">لنحن هنا لمساعدتك في أي وقت تحتاجه.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ///end section 2//// - -->
+    <!-- ///start section 3//// - -->
+    <section class="padding-section">
+        <div class="container ">
+            <div class="row">
+                <div class="flex flex-col items-center justify-center text-center p-4 flex-column">
+
+                    <h1>اكتشف <span class="ch-two">HYAKEL</span> بوابتك نحو دعم أسرع وأكثر كفاءة!</h1>
+                </div>
+        <form action="#">
+            <div class="flex justify-center gap-3 flex-wrap mt-4 px-4 md:px-0">
+                <!-- Mobile: w-full (100%), Desktop: w-[45%] -->
+                <input type="tel" placeholder="رقم الجوال"
+                    class="w-full md:w-[45%] mb-3 h-[50px] border-none rounded-[5px] shadow-lg placeholder-[#3D3D3D] placeholder:font-bold placeholder:text-end px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-amber-600 shadow-white/50"
+                    required>
+        
+                <input type="text" placeholder="موظف"
+                    class="w-full md:w-[45%] h-[50px] placeholder-[#3D3D3D] placeholder:font-bold border-none rounded-[5px] px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-amber-600 shadow-white/50"
+                    required>
+        
+                <input type="text" placeholder="الاسم"
+                    class="w-full md:w-[45%] h-[50px] placeholder-[#3D3D3D] placeholder:font-bold border-none rounded-[5px] px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-amber-600 shadow-white/50"
+                    required>
+        
+                <input type="email" placeholder="البريد الإلكتروني"
+                    class="w-full md:w-[45%] h-[50px] placeholder-[#3D3D3D] placeholder:font-bold border-none rounded-[5px] px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-amber-600 shadow-white/50"
+                    required>
+        
+                <textarea name="message" placeholder="الرسالة"
+                    class="w-full md:w-[91%] mt-2 h-[300px] placeholder-[#3D3D3D] placeholder:font-bold border-none rounded-[5px] px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-amber-600 shadow-white/50"></textarea>
+            </div>
+        </form>
+            </div>
+        </div>
+    </section>
+    <!-- ///end section 3//// - -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
