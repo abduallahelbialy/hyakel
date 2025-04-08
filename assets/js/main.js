@@ -7,32 +7,33 @@ toggle.addEventListener("click", () => {
 });
 
 ///accordion////
-    document.querySelectorAll(".accordion-button").forEach((button) => {
-      button.addEventListener("click", function () {
-        document.querySelectorAll(".accordion-title").forEach((title) => {
-          title.style.color = "#030303";
-        });
-
-        const title = this.querySelector(".accordion-title");
-        if (this.getAttribute("aria-expanded") === "true") {
-          title.style.color = "orange";
-        }
-      });
+document.querySelectorAll(".accordion-button").forEach((button) => {
+  button.addEventListener("click", function () {
+    document.querySelectorAll(".accordion-title").forEach((title) => {
+      title.style.color = "#030303";
     });
 
+    const title = this.querySelector(".accordion-title");
+    if (this.getAttribute("aria-expanded") === "true") {
+      title.style.color = "orange";
+    }
+  });
+});
+///getFullYear///
+document.getElementById("year").textContent = new Date().getFullYear();
+
 ///save code
-        document.addEventListener("contextmenu", function (event) {
-          event.preventDefault();
-        });
+document.addEventListener("contextmenu", function (event) {
+  event.preventDefault();
+});
 
-        document.addEventListener("keydown", function (event) {
-          if (
-            event.key === "F12" ||
-            (event.ctrlKey && event.shiftKey && event.key === "I") ||
-            (event.ctrlKey && event.shiftKey && event.key === "J") ||
-            (event.ctrlKey && event.key === "U")
-          ) {
-            event.preventDefault();
-          }
-        });
-
+document.addEventListener("keydown", function (event) {
+  if (
+    event.key === "F12" ||
+    (event.ctrlKey && event.shiftKey && event.key === "I") ||
+    (event.ctrlKey && event.shiftKey && event.key === "J") ||
+    (event.ctrlKey && event.key === "U")
+  ) {
+    event.preventDefault();
+  }
+});

@@ -13,17 +13,15 @@
     <meta name="language" content="ar">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/image/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/image/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/site.webmanifest">
 
     <!-- Fonts and Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="assets/css/flowbite.min.css" rel="stylesheet" />
     <link href="./src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -873,14 +871,15 @@
             <div class="border-t border-[#FFF9ED] mt-8 mb-3"></div>
 
             <!-- Footer Bottom -->
-            <div class="text-center mt-5">
-                <p class="text-[#FFF9ED] font-bold">جميع الحقوق محفوظة &copy; 2025 Hyakel</p>
-            </div>
+        <div class="text-center mt-5">
+            <p class="text-[#FFF9ED] font-bold">
+                جميع الحقوق محفوظة &copy; <span id="year"></span> Hyakel
+            </p>
+        </div>
         </div>
     </footer>
 
     <!-- end footer -->
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
     <script src="assets/js/main.js"></script>
 </body>
